@@ -65,9 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				0BEE40252B71594000E5643D /* MVIApp.swift */,
-				0BEE40392B717B2B00E5643D /* MainView */,
-				0BEE40372B716E3200E5643D /* SecondView.swift */,
+				0BEE40452B71986700E5643D /* MainViewComponent */,
 				0BEE40342B71602600E5643D /* MainViewModel */,
+				0BEE40442B7197F900E5643D /* SecondViewComponent */,
 				0BEE40292B71594100E5643D /* Assets.xcassets */,
 				0BEE402B2B71594100E5643D /* MVI.entitlements */,
 				0BEE402C2B71594100E5643D /* Preview Content */,
@@ -86,6 +86,7 @@
 		0BEE40342B71602600E5643D /* MainViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0BEE403F2B717C9200E5643D /* Protocols */,
 				0BEE40352B71604600E5643D /* MainViewModel.swift */,
 				0BEE40422B718C2000E5643D /* MainViewExtensions.swift */,
 			);
@@ -104,7 +105,6 @@
 		0BEE403E2B717C6A00E5643D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0BEE403F2B717C9200E5643D /* Protocols */,
 				0BEE403C2B717B9F00E5643D /* MainViewBuilder.swift */,
 				0BEE403A2B717B4E00E5643D /* ExtensionsMainView.swift */,
 			);
@@ -117,6 +117,22 @@
 				0BEE40402B71893200E5643D /* MVIProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0BEE40442B7197F900E5643D /* SecondViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0BEE40372B716E3200E5643D /* SecondView.swift */,
+			);
+			path = SecondViewComponent;
+			sourceTree = "<group>";
+		};
+		0BEE40452B71986700E5643D /* MainViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0BEE40392B717B2B00E5643D /* MainView */,
+			);
+			path = MainViewComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -7,19 +7,6 @@
 
 import Foundation
 
-// MARK - Action NameSpace
-extension MainViewModel {
-    
-    enum MainViewModelAction {
-        
-        struct GoToSecondView: Action {}
-        
-        struct ChangeTextFieldValue: Action { let text: String }
-        
-        struct ChangePasswordDisplay: Action { let text: String }
-    }
-}
-
 // MARK - Binding
 extension MainViewModel {
     
@@ -45,10 +32,15 @@ extension MainViewModel {
     }
 }
 
-// MARK - Add RootDisplayModel
-extension MainViewModel: RootDisplayModel {
+// MARK - Action NameSpace
+extension MainViewModel {
     
-    func changePasswordDisplay(_ text: String) { self.text = text }
-    
-    func changedTextFieldValue(_ text: String) { action.send(MainViewModel.MainViewModelAction.ChangePasswordDisplay(text: text)) }
+    enum MainViewModelAction {
+        
+        struct GoToSecondView: Action {}
+        
+        struct ChangeTextFieldValue: Action { let text: String }
+        
+        struct ChangePasswordDisplay: Action { let text: String }
+    }
 }

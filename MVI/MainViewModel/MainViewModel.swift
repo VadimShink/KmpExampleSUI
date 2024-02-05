@@ -26,3 +26,11 @@ class MainViewModel: ObservableObject, RootStateModel {
         bind()
     }
 }
+
+// MARK - Add RootDisplayModel
+extension MainViewModel: RootDisplayModel {
+    
+    func changePasswordDisplay(_ text: String) { self.text = text }
+    
+    func changedTextFieldValue(_ text: String) { action.send(MainViewModel.MainViewModelAction.ChangePasswordDisplay(text: text)) }
+}
