@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0BEE40262B71594000E5643D /* MVIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE40252B71594000E5643D /* MVIApp.swift */; };
-		0BEE40282B71594000E5643D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE40272B71594000E5643D /* ContentView.swift */; };
+		0BEE40282B71594000E5643D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE40272B71594000E5643D /* MainView.swift */; };
 		0BEE402A2B71594100E5643D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BEE40292B71594100E5643D /* Assets.xcassets */; };
 		0BEE402E2B71594100E5643D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BEE402D2B71594100E5643D /* Preview Assets.xcassets */; };
+		0BEE40362B71604600E5643D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE40352B71604600E5643D /* MainViewModel.swift */; };
+		0BEE40382B716E3200E5643D /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE40372B716E3200E5643D /* SecondView.swift */; };
+		0BEE403B2B717B4E00E5643D /* ExtensionsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE403A2B717B4E00E5643D /* ExtensionsMainView.swift */; };
+		0BEE403D2B717B9F00E5643D /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE403C2B717B9F00E5643D /* MainViewBuilder.swift */; };
+		0BEE40412B71893200E5643D /* MVIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE40402B71893200E5643D /* MVIProtocols.swift */; };
+		0BEE40432B718C2000E5643D /* MainViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE40422B718C2000E5643D /* MainViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BEE40222B71594000E5643D /* MVI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEE40252B71594000E5643D /* MVIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIApp.swift; sourceTree = "<group>"; };
-		0BEE40272B71594000E5643D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0BEE40272B71594000E5643D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0BEE40292B71594100E5643D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BEE402B2B71594100E5643D /* MVI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MVI.entitlements; sourceTree = "<group>"; };
 		0BEE402D2B71594100E5643D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BEE40352B71604600E5643D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		0BEE40372B716E3200E5643D /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		0BEE403A2B717B4E00E5643D /* ExtensionsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsMainView.swift; sourceTree = "<group>"; };
+		0BEE403C2B717B9F00E5643D /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
+		0BEE40402B71893200E5643D /* MVIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIProtocols.swift; sourceTree = "<group>"; };
+		0BEE40422B718C2000E5643D /* MainViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				0BEE40252B71594000E5643D /* MVIApp.swift */,
-				0BEE40272B71594000E5643D /* ContentView.swift */,
+				0BEE40392B717B2B00E5643D /* MainView */,
+				0BEE40372B716E3200E5643D /* SecondView.swift */,
+				0BEE40342B71602600E5643D /* MainViewModel */,
 				0BEE40292B71594100E5643D /* Assets.xcassets */,
 				0BEE402B2B71594100E5643D /* MVI.entitlements */,
 				0BEE402C2B71594100E5643D /* Preview Content */,
@@ -67,6 +81,42 @@
 				0BEE402D2B71594100E5643D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BEE40342B71602600E5643D /* MainViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BEE40352B71604600E5643D /* MainViewModel.swift */,
+				0BEE40422B718C2000E5643D /* MainViewExtensions.swift */,
+			);
+			path = MainViewModel;
+			sourceTree = "<group>";
+		};
+		0BEE40392B717B2B00E5643D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				0BEE40272B71594000E5643D /* MainView.swift */,
+				0BEE403E2B717C6A00E5643D /* Extensions */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		0BEE403E2B717C6A00E5643D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0BEE403F2B717C9200E5643D /* Protocols */,
+				0BEE403C2B717B9F00E5643D /* MainViewBuilder.swift */,
+				0BEE403A2B717B4E00E5643D /* ExtensionsMainView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0BEE403F2B717C9200E5643D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0BEE40402B71893200E5643D /* MVIProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BEE40282B71594000E5643D /* ContentView.swift in Sources */,
+				0BEE40282B71594000E5643D /* MainView.swift in Sources */,
+				0BEE40412B71893200E5643D /* MVIProtocols.swift in Sources */,
 				0BEE40262B71594000E5643D /* MVIApp.swift in Sources */,
+				0BEE40432B718C2000E5643D /* MainViewExtensions.swift in Sources */,
+				0BEE40382B716E3200E5643D /* SecondView.swift in Sources */,
+				0BEE403B2B717B4E00E5643D /* ExtensionsMainView.swift in Sources */,
+				0BEE40362B71604600E5643D /* MainViewModel.swift in Sources */,
+				0BEE403D2B717B9F00E5643D /* MainViewBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
