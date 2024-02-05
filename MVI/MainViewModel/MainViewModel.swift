@@ -12,6 +12,7 @@ import Combine
 // Intent
 class MainViewModel: ObservableObject, RootStateModel {
     
+    // Wish
     let action: PassthroughSubject<Action, Never> = .init()
     var bindings = Set<AnyCancellable>()
     

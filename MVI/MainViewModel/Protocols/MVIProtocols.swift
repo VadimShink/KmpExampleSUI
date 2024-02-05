@@ -10,6 +10,7 @@ import SwiftUI
 protocol Action { }
 
 // MARK - MainViewModel content
+// Reducer
 protocol RootStateModel {
     var text: String { get }
     var changeValue: String { get }
@@ -17,6 +18,7 @@ protocol RootStateModel {
 }
 
 // MARK - MainViewModel actions
+// Reducer
 protocol RootDisplayModel {
     
     func changePasswordDisplay(_ text: String)

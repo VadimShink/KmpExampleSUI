@@ -10,12 +10,14 @@ import Foundation
 // MARK - Binding
 extension MainViewModel {
     
+    // Actor
     func bind() {
         
         action
             .receive(on: DispatchQueue.main)
             .sink { [unowned self] action in
                 
+                // Effect
                 switch action {
                     
                 case let parameter as MainViewModel.MainViewModelAction.ChangeTextFieldValue:
@@ -33,6 +35,7 @@ extension MainViewModel {
 }
 
 // MARK - Action NameSpace
+// State
 extension MainViewModel {
     
     enum MainViewModelAction {
